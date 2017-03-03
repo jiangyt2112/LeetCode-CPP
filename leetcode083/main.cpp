@@ -19,29 +19,25 @@ public:
         while (trav != NULL)
         {
             ListNode* tmp = trav -> next;
-            bool flag = false;
+
             while (tmp != NULL and tmp -> val == trav -> val)
             {
                 // cout << tmp -> val << " " << trav ->val << endl;
                 tmp = tmp -> next;
-                flag = true;
             }
             // cout << flag << endl;
 
-            if (!flag)
-            {
-                ListNode* n = new ListNode(trav -> val);
+            ListNode* n = new ListNode(trav -> val);
 
-                if (ptr == NULL)
-                {
-                    ptr = n;
-                    myhead = ptr;
-                }
-                else
-                {
-                    ptr -> next = n;
-                    ptr = n;
-                }
+            if (ptr == NULL)
+            {
+                ptr = n;
+                myhead = ptr;
+            }
+            else
+            {
+                ptr -> next = n;
+                ptr = n;
             }
             trav = tmp;
         }
@@ -59,7 +55,7 @@ int main()
 {
     Solution s;
     ListNode* head;
-    ListNode n1(1), n2(1), n3(1), n4(1);
+    ListNode n1(1), n2(2), n3(2), n4(3);
     head = &n1;
     n1.next = &n2;
     n2.next = &n3;
