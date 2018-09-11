@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1535681632 source:c:\code\leetcode-cpp\io\main.cpp
+	<iostream>
+	<sstream>
+	<fstream>
+	<ctime>
+	<windows.h>
+	<iomanip>
+

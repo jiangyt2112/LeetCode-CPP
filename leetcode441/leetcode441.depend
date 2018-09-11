@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1535768371 source:c:\code\leetcode-cpp\leetcode441\main.cpp
+	<iostream>
+	<cmath>
+	<algorithm>
+
